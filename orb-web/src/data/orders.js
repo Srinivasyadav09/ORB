@@ -1,0 +1,5 @@
+export const orders = [
+  { id: "ORB00123", date: "12 Sep 2026", total: 220, deliveryFee: 30, status: "Delivered", paymentMethod: "UPI", addressId: "home-address", address: { label: "Home", line1: "123, Green Park", city: "Hyderabad", state: "Telangana", postalCode: "500001" }, items: [1, 4, 5].map(productId => ({ productId, quantity: 1, rating: null, review: "" })) },
+  { id: "ORB00122", date: "08 Sep 2026", total: 180, deliveryFee: 30, status: "Shipped", paymentMethod: "UPI", addressId: "home-address", address: { label: "Home", line1: "123, Green Park", city: "Hyderabad", state: "Telangana", postalCode: "500001" }, items: [2, 3].map(productId => ({ productId, quantity: 1, rating: null, review: "" })) },
+  { id: "ORB00121", date: "01 Sep 2026", total: 240, deliveryFee: 30, status: "Processing", paymentMethod: "UPI", addressId: "home-address", address: { label: "Home", line1: "123, Green Park", city: "Hyderabad", state: "Telangana", postalCode: "500001" }, items: [6].map(productId => ({ productId, quantity: 1, rating: null, review: "" })) }
+];
