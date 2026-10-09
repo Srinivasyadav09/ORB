@@ -15,4 +15,4 @@ RUN mkdir -p /app/uploads && useradd --create-home --uid 10001 appuser && chown 
 USER appuser
 
 EXPOSE 8000
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "alembic upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
